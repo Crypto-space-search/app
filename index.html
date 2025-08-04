@@ -335,12 +335,13 @@ body {
 
 
   <div class="sidebar">
-    <h1>Crypto Search Space ™</h1>
-    <button id="scannerBtn">🔍 Scanner</button>
-    <button id="homeBtn">🏠 Home</button>
-    <a href="https://t.me/Crypto_space_search_admin" target="_blank">📩 Support</a>
-    <a class="upgrade-btn" id="upgradeNowBtn" href="javascript:void(0)">🔓 Upgrade Now</a>
-  </div>
+  <h1>Crypto Search Space ™</h1>
+  <button id="scannerBtn">🔍 Scanner</button>
+  <button id="withdrawBtn">💸 Withdraw</button> <!-- Home এর জায়গায় Withdraw -->
+  <a href="https://t.me/Crypto_space_search_admin" target="_blank">📩 Support</a>
+  <a class="upgrade-btn" id="upgradeNowBtn" href="javascript:void(0)">🔓 Upgrade Now</a>
+</div>
+
   <div class="main">
     <div class="header">
       <div class="blockchains">
@@ -456,7 +457,7 @@ body {
   const startBtn = document.getElementById("startBtn");
   const stopBtn = document.getElementById("stopBtn");
   const scannerBtn = document.getElementById("scannerBtn");
-  const homeBtn = document.getElementById("homeBtn");
+ 
 
   const plans = [
     {name: 'One blockchain', price: 199},
@@ -627,7 +628,7 @@ line.innerHTML = `
   startBtn.addEventListener("click", startSearch);
   stopBtn.addEventListener("click", stopSearch);
   scannerBtn.addEventListener("click", startSearch);
-  homeBtn.addEventListener("click", goHome);
+  
 
   window.onload = function() {
     loadData();
