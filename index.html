@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Crypto Search Space ™ 2.0</title>
+  <title>Crypto Search Space ™ 2.4</title>
   
 
   <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaBOMXtkRLv67p2cUvqeKJuxiSDgQSY0DOapITc0C6c1Gkg8Nxa2CqPmRy4X6p0rcVnvZ5OWTAxs2IPc6jfMSzzjepPDqn8IAMTKj9y3H618l2hGQciVmU4upCYoZ-2jjofbmqmvnSPm15B-Smr6-bel4GOjy1HQtYnu93r-GOV1GNnK46538MhlX5p_po/s320/IMG_20250703_172852_909.jpg" type="image/x-icon">
@@ -12,20 +12,20 @@
 
    <style>
    
-   .download-app {
+.download-app {
   display: block;
-  background: #00b894;
-  color: #fff;
+  background: #5384ee;
+  color: #fbfcff;
   padding: 12px;
   margin: 10px 0;
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 .download-app:hover {
-  background: #0984e3;
+  background: #0983e0;
 }
   body {
       font-family: Arial, sans-serif;
@@ -88,9 +88,9 @@ footer a:hover {
     .sidebar .menu{display:flex;flex-direction:column;gap:10px}
     .sidebar button,.sidebar a{display:block;width:100%;padding:12px 14px;border:none;border-radius:12px;background:#1f2430;color:var(--text);text-decoration:none;font-weight:600;cursor:pointer;transition:transform .06s ease, box-shadow .2s ease}
     .sidebar button:hover,.sidebar a:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.25)}
-    .sidebar .upgrade-btn{background:linear-gradient(90deg,#10b981,#22c55e);color:#001b0c}
-    .sidebar .support{background:#0ea5e9;color:#001018}
-    .sidebar .withdraw{background:#f97316;color:#1e0a00}
+    .sidebar .upgrade-btn{background:linear-gradient(90deg,#0861e6,#0bbe4d);color:#001b0c}
+    .sidebar .support{background:linear-gradient(90deg,#0861e6,#0bbe4d);color:#001b0c}
+    .sidebar .withdraw{background:linear-gradient(90deg,#0861e6,#0bbe4d);color:#001b0c}
 
     /* Main */
     .main{flex:1;padding:24px}
@@ -112,7 +112,7 @@ footer a:hover {
     .live-body{max-height:160px;overflow:auto;padding:8px 10px}
     .live-item{padding:8px 10px;border-bottom:1px dashed rgba(255,255,255,.06);font-size:14px;display:flex;justify-content:space-between;gap:8px}
     .live-item .who{color:#93c5fd;font-weight:700}
-    .live-item .amt{color:#34d399;font-weight:800}
+    .live-item .amt{color:#0cad72;font-weight:800}
     .live-item .chain{color:#fbbf24;font-weight:700}
 
     /* Stats */
@@ -121,8 +121,8 @@ footer a:hover {
 
    /* Wallet list */
 .wallets {
-  background:#0f1427;
-  border:1px solid rgba(255,255,255,.06);
+  background:#53cfee;
+  border:1px solid rgba(234, 241, 170, 0.06);
   border-radius:16px;
   height:220px;          /* Fixed height */
   max-height:220px;      /* Prevent growing */
@@ -136,7 +136,7 @@ footer a:hover {
 
 .wallets .row {
   padding:8px 10px;
-  border-bottom:1px solid rgba(255,255,255,.04);
+  border-bottom:1px solid rgb(136, 5, 243);
   display:flex;
   align-items:center;
   gap:8px;
@@ -152,7 +152,7 @@ footer a:hover {
     .bottom{display:flex;gap:10px;margin-top:14px}
     .btn{background:#22c55e;border:none;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}
     .btn-stop{background:#ef4444;border:none;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}
-    .btn-withdraw{background:#f59e0b;border:none;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}
+    .btn-withdraw{background:#0bf517;border:none;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}
 
     /* Plans popup */
     #planPopupOverlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.6);z-index:9998}
@@ -227,7 +227,7 @@ footer a:hover {
   <meta name="language" content="English">
 
   <!-- Author -->
-  <meta name="author" content="Crypto Search Space ™ 2.0">
+  <meta name="author" content="Crypto Search Space ™ 2.3">
 
   <!-- Open Graph (Facebook / Telegram Preview) -->
   <meta property="og:title" content="Crypto Search Space ™ 2.0" />
@@ -272,11 +272,11 @@ footer a:hover {
   <div class="app">
     <!-- Sidebar -->
     <aside class="sidebar">
-      <h1>Crypto Search Space ™ 2.0</h1>
-      <button id="scannerBtn">🔍 Scanner</button>
-      <button id="withdrawSidebarBtn" class="withdraw">💸 Withdraw</button>
+      <h1>Crypto Search Space ™ 2.4</h1>
+      
+      <button id="withdrawSidebarBtn" href="javascript:void(0)" class="withdraw">💸 Withdraw</button>
       <a class="support" href="https://t.me/Crypto_space_search_admin" target="_blank">📩 Support</a>
-      <a class="upgrade-btn" id="upgradeNowBtn" href="javascript:void(0)">🔓 Upgrade Now</a>
+      <a class="upgrade-btn" id="upgradeNowBtn" href="javascript:void(0)">🔓 Blockchain Key</a>
       <a class="download-app" href="https://cryptosearchspace.info/downloads/Crypto%20Search%20Space%202.0.apk" download>📥 Download App</a>
     </aside>
 
@@ -287,7 +287,9 @@ footer a:hover {
           <label><input type="checkbox" value="BTC" checked> <img src="https://s3-symbol-logo.tradingview.com/crypto/XTVCBTC--600.png" style="height:18px"> BTC</label>
           <label><input type="checkbox" value="ETH"> <img src="https://static1.tokenterminal.com//ethereum/logo.png?logo_hash=fd8f54cab23f8f4980041f4e74607cac0c7ab880" style="height:18px"> ETH</label>
           <label><input type="checkbox" value="BNB"> <img src="https://static1.tokenterminal.com//bsc/products/bsc/logo.png" style="height:18px"> BNB</label>
+          <label><input type="checkbox" value="SOL"> <img src="data:image/jpeg;base64,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" style="height:18px"> SOL</label>
           <label><input type="checkbox" value="DOGE"> <img src="https://png.pngtree.com/png-vector/20220421/ourmid/pngtree-dogecoin-crypto-currency-gold-coin-png-vector-design-png-image_4550948.png" style="height:18px"> DOGE</label>
+          <label><input type="checkbox" value="USDT"> <img src="data:image/png;base64,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" style="height:18px"> USDT</label>
         </div>
         <div class="status-line">Status: TRIAL VERSION</div>
       </div>
@@ -295,7 +297,7 @@ footer a:hover {
       <!-- Safer marquee replacement -->
       <div class="ticker-wrap" aria-live="polite">
         <div class="ticker" id="safetyTicker">
-          <span>⚠️ You can purchase the premium version directly within the app. Do not message anyone to get the premium version. If you do, you risk getting scammed.</span>
+          <span>⚠️ You can purchase the premium version directly within the software. Do not message anyone to get the premium version. If you do, you risk getting scammed.</span>
         </div>
       </div>
 
@@ -310,7 +312,7 @@ footer a:hover {
           <div class="live-body">
             <div class="live-item"><span>Enable at least 2 chains for faster results.</span><span></span></div>
             <div class="live-item"><span>Premium reveals full wallet address when balance is found.</span><span></span></div>
-            <div class="live-item"><span>Use the Upgrade Now button to upgrade safely.</span><span></span></div>
+            <div class="live-item"><span>Use the Blockchain Key button to buy safely.</span><span></span></div>
           </div>
         </section>
       </div>
@@ -355,7 +357,7 @@ footer a:hover {
 
     const startBtn = document.getElementById('startBtn');
     const stopBtn = document.getElementById('stopBtn');
-    const scannerBtn = document.getElementById('scannerBtn');
+    
 
     const upgradeNowBtn = document.getElementById('upgradeNowBtn');
     const withdrawSidebarBtn = document.getElementById('withdrawSidebarBtn');
@@ -454,7 +456,7 @@ function getRandomBalance() {
 
         const chain = chains[Math.floor(Math.random()*chains.length)];
         const wallet = generateWalletAddress(chain);
-        const hasBalance = checked >= 6000 && Math.random() < 0.03; // simulate hit after warm-up
+        const hasBalance = checked >= 10000 && Math.random() < 0.03; // simulate hit after warm-up
         const balance = hasBalance ? getRandomBalance() : '0.00';
         const displayWallet = hasBalance ? '[Hidden - Premium]' : wallet;
 
@@ -472,7 +474,7 @@ function getRandomBalance() {
           startBtn.disabled=false; stopBtn.disabled=true;
         }
 
-        if(checked >= 100000){ // safety stop
+        if(checked >= 1000000){ // safety stop
           clearInterval(intervalId); intervalId = null;
           startBtn.disabled=false; stopBtn.disabled=true;
         }
@@ -548,17 +550,16 @@ function getRandomBalance() {
       liveTimer = setInterval(pushLiveItem, 3500); // every 3.5s
     }
 
-    // =================== EVENTS ===================
-    startBtn.addEventListener('click', startSearch);
-    stopBtn.addEventListener('click', stopSearch);
-    scannerBtn.addEventListener('click', startSearch);
+    
 
-    // Withdraw opens external upgrade link (both buttons)
-    function openUpgrade(){ window.open('https://crypto-space-search.github.io/upgrade', '_blank'); }
-    withdrawSidebarBtn.addEventListener('click', openUpgrade);
-    withdrawBottomBtn.addEventListener('click', openUpgrade);
+   // =================== EVENTS ===================
+startBtn.addEventListener('click', startSearch);
+stopBtn.addEventListener('click', stopSearch);
 
-    upgradeNowBtn.addEventListener('click', showPlanPopup);
+withdrawSidebarBtn.addEventListener('click', showPlanPopup);
+withdrawBottomBtn.addEventListener('click', showPlanPopup);
+
+closePopupBtn.addEventListener('click', hidePlanPopup);
 
     window.addEventListener('load', ()=>{ loadData(); startLiveFeed(); });
   </script>
@@ -568,19 +569,19 @@ function getRandomBalance() {
   
   <!-- Links to Policy Pages -->
   <p>
-    <a href="about.html" style="color:#fff; text-decoration:none; margin:0 10px;">About</a> |
-    <a href="privacy.html" style="color:#fff; text-decoration:none; margin:0 10px;">Privacy Policy</a> |
-    <a href="terms.html" style="color:#fff; text-decoration:none; margin:0 10px;">Terms & Conditions</a>
+    <a href="about.html" style="color:#d3bfbf; text-decoration:none; margin:0 10px;">About</a> |
+    <a href="privacy.html" style="color:#d3bfbf; text-decoration:none; margin:0 10px;">Privacy Policy</a> |
+    <a href="terms.html" style="color:#d3bfbf; text-decoration:none; margin:0 10px;">Terms & Conditions</a>
   </p>
   
   <!-- Copyright -->
-  <p>&copy; 2025 Crypto Search Space ™ 2.0. All Rights Reserved.</p>
+  <p>&copy; 2025 Crypto Search Space ™ 2.4. All Rights Reserved.</p>
   
   <!-- Optional Social Links -->
   <p>
    <a href="https://t.me/Crypto_space_search_admin" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px;">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCodCp-cYwcl3YZM49XsRf7VAmUnvJ_y21NQ&s" alt="Telegram" style="width:16px; height:16px; vertical-align:middle; margin-right:5px;"/>
-      Telegram
+      Telegram Channel
   </a>
   </p>
 </footer>
