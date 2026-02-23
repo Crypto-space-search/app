@@ -211,6 +211,104 @@ footer a:hover {
 
     /* Small improvement for accessibility: focus and active states */
     .sidebar button:focus,.sidebar a:focus,.btn:focus,#payNowBtn:focus,#closePopupBtn:focus{outline:3px solid rgba(96,165,250,.18);outline-offset:2px}
+
+
+/* Overlay background */
+#keyPopup {
+  position: fixed;
+  inset: 0; /* top:0; bottom:0; left:0; right:0 */
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent dark background */
+  z-index: 9999;
+}
+
+/* Popup box */
+#keyPopup .popup-content {
+  background: #11162a; /* dark card background */
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  color: #e5e7eb;
+  animation: popupFade 0.3s ease;
+}
+
+/* Animation */
+@keyframes popupFade {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Heading */
+#keyPopup h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+/* Input field */
+#blockchainKeyInput {
+  width: 80%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  font-size: 16px;
+  margin-bottom: 16px;
+  background: #1f2430;
+  color: #fff;
+  text-align: center;
+}
+
+/* Buttons */
+#submitKeyBtn, #closeKeyPopup {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Submit Button */
+#submitKeyBtn {
+  background: linear-gradient(90deg, #0861e6, #0bbe4d);
+  color: #fff;
+}
+
+/* Submit hover */
+#submitKeyBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Close Button */
+#closeKeyPopup {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* Close hover */
+#closeKeyPopup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Responsive */
+@media(max-width: 500px){
+  #keyPopup .popup-content { padding: 16px; }
+  #blockchainKeyInput { width: 100%; }
+}
+
+
+
+
+     
   </style>
   
   
@@ -280,6 +378,54 @@ footer a:hover {
       <a class="download-app" href="https://cryptosearchspace.info/downloads/Crypto%20Search%20Space%202.0.apk" download>📥 Download App</a>
     </aside>
 
+
+<!-- POPUP -->
+<div id="keyPopup" class="popup-overlay">
+  <div class="popup-box">
+    <h3>Enter 8-Digit Blockchain Key</h3>
+    <input type="text" id="blockchainKeyInput" maxlength="8" placeholder="Enter 8 digit key" />
+    <div class="popup-buttons">
+      <button id="submitKeyBtn">Submit</button>
+      <button id="closeKeyPopup">Cancel</button>
+    </div>
+  </div>
+</div>
+
+    <script> 
+   const blockchainKeyBtn = document.getElementById("blockchainKeyBtn");
+const keyPopup = document.getElementById("keyPopup");
+const closeKeyPopup = document.getElementById("closeKeyPopup");
+const submitKeyBtn = document.getElementById("submitKeyBtn");
+const blockchainKeyInput = document.getElementById("blockchainKeyInput");
+
+if (blockchainKeyBtn) {
+  blockchainKeyBtn.addEventListener("click", function() {
+    keyPopup.style.display = "flex";
+  });
+}
+
+if (closeKeyPopup) {
+  closeKeyPopup.addEventListener("click", function() {
+    keyPopup.style.display = "none";
+  });
+}
+
+if (submitKeyBtn) {
+  submitKeyBtn.addEventListener("click", function() {
+    const key = blockchainKeyInput.value.trim();
+
+    if (/^\d{8}$/.test(key)) {
+      alert("✅ Key Accepted: " + key);
+      keyPopup.style.display = "none";
+    } else {
+      alert("❌ Please enter valid 8 digit number key!");
+    }
+  });
+}
+ </script>
+
+
+    
     <!-- Main -->
     <main class="main">
       <div class="header">
@@ -589,4 +735,5 @@ closePopupBtn.addEventListener('click', hidePlanPopup);
 
 </body>
 </html>
+
 
